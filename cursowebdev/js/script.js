@@ -8,4 +8,8 @@ function somar(a,b)
     return a+b;
 }
 
-console.log(somar(a,b));
+document.getElementById("btn-calcular").onclick = function (){
+ var valorA=document.getElementById("valor-a").value;
+ var valorB=document.getElementById("valor-b").value;
+    alert(somar(parseInt(valorA),parseInt(valorB)));
+}
